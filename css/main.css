@@ -1,6 +1,6 @@
 html {
     font-size: 62.5%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 body {
@@ -37,7 +37,7 @@ a {
     color: #FF5677;
 }
 
-.home .main-header ul {
+.home .main-header .main-header__nav {
     margin-top: 100px;
 }
 
@@ -54,10 +54,21 @@ a {
     padding: 10px 10px 10px 10px;
 }
 
+.home .main-header ul .main-header__nav--item a:hover {
+    background-color: #4C3F91;
+    color: #fff;
+    border-radius: 25px;
+    transition: 500ms;
+}
+
 .home .main-header ul .main-header__nav--item a {
     color: #1d1d1d;
     font-weight: 500;
+    padding: 10px;
 }
+
+
+/*Main*/
 
 .main {
     width: 100%;
@@ -66,4 +77,34 @@ a {
 
 .main .main-title {
     margin-left: 50px;
+}
+
+.main .cards {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .cards .card {
+    width: 150px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 12px 14px 102px -35px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 12px 14px 102px -35px rgba(0, 0, 0, 0.28);
+    box-shadow: 12px 14px 102px -35px rgba(0, 0, 0, 0.28);
+}
+
+.main .cards .card .card-title {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.section-music {
+    padding: 50px;
+}
+
+.section-music .spotify {
+    width: 100%;
 }

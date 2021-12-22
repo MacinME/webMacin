@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Figuras geométricas</h1>
+        <nav class="header__navbar">
+            <ul class="header__navbar--main">
+                <li><a href="index.html">Figuras</a></li>
+                <li><a href="porcentaje.html" class="active">Descuentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner banner2">
+    </section>
+    <section class="main-2">
+        <form>
+            <label for="price">Escribe el precio de tu producto</label>
+            <input type="number" id="price">
+            <label for="coupon">Escribe el descuento de tu producto</label>
+            <input type="text" id="coupon">
+            <button class="porcent button" type="button" onclick="calculatePriceWithDiscount()">calcular precio con descuento</button>
+            <p id="resultPrice"></p>
+            <p id="saved"></p>
+        </form>
+    </section>
+    <script src="./js/porcentajes.js"></script>
+</body>
+
+</html>
